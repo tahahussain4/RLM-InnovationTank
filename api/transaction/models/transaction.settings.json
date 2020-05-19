@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transactions",
+  "info": {
+    "name": "Transaction"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "item": {
+      "model": "item"
+    },
+    "order": {
+      "model": "orders"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "reason": {
+      "type": "enumeration",
+      "enum": [
+        "maker_request",
+        "maker_request_rejected",
+        "order_placed",
+        "order_deletion",
+        "other"
+      ]
+    },
+    "createTimeNanos": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aggregates",
+      "handler": "aggregate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aggregates/count",
+      "handler": "aggregate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aggregates/:id",
+      "handler": "aggregate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aggregates",
+      "handler": "aggregate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aggregates/:id",
+      "handler": "aggregate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aggregates/:id",
+      "handler": "aggregate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

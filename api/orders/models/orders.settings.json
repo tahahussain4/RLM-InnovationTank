@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "completedDate": {
+      "type": "datetime"
+    },
+    "datePlaced": {
+      "type": "datetime"
+    },
+    "quantityRequested": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "hospital": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "requestorName": {
+      "type": "string"
+    },
+    "requestorPhone": {
+      "type": "string"
+    },
+    "requestorEmail": {
+      "type": "string"
+    },
+    "item": {
+      "model": "item"
+    },
+    "deliveryAddress": {
+      "type": "string"
+    },
+    "deliveryOptions": {
+      "type": "string"
+    },
+    "deliveryNotes": {
+      "type": "text"
+    },
+    "innovationTankContact": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    }
+  }
+}

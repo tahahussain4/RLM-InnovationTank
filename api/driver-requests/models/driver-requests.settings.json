@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "driver_requests",
+  "info": {
+    "name": "DriverRequests"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "order": {
+      "model": "orders"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "datePlaced": {
+      "type": "datetime"
+    }
+  }
+}

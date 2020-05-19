@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aggregates",
+  "info": {
+    "name": "Aggregate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "item": {
+      "model": "item"
+    },
+    "totalNeeded": {
+      "type": "biginteger"
+    },
+    "transaction": {
+      "model": "transaction"
+    }
+  }
+}

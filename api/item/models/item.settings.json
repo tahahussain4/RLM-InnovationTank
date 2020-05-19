@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "items",
+  "info": {
+    "name": "Item"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "category": {
+      "type": "string"
+    },
+    "modelName": {
+      "type": "string"
+    },
+    "material": {
+      "type": "string"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "stlFile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

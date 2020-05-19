@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/driver-requests",
+      "handler": "driver-requests.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driver-requests/count",
+      "handler": "driver-requests.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/driver-requests/:id",
+      "handler": "driver-requests.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/driver-requests",
+      "handler": "driver-requests.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/driver-requests/:id",
+      "handler": "driver-requests.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/driver-requests/:id",
+      "handler": "driver-requests.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
